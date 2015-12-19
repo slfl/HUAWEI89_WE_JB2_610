@@ -1,0 +1,10 @@
+export CROSS_COMPILE=~/toolchains/arm-linux-androideabi-4.7.7/bin/arm-linux-androideabi-
+Build Command:
+
+kernel
+======
+cd kernel directory
+TARGET_PRODUCT=huawei89_we_jb2 MTK_ROOT_CUSTOM=../mediatek/custom/ make
+
+or use
+	./build.sh
