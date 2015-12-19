@@ -32,7 +32,6 @@
 # have been modified by MediaTek Inc. All revisions are subject to any receiver's
 # applicable license agreements with MediaTek Inc.
 
-ccflags-y += -I$(MTK_ROOT_CUSTOM)/$(MTK_PROJECT)/common
 obj-$(CONFIG_MTK_MMC) += dbg.o
 obj-$(CONFIG_MTK_MMC) += sd.o mt_sd_misc.o
 

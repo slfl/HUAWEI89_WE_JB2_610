@@ -11,6 +11,8 @@
 
 #include <mach/m4u.h>
 #include <mach/mt_smi.h>
+#include <mach/mt_gpufreq.h>    /*Adjust GPU OD or not*/
+
 #include "smi_reg.h"
 #include "smi_common.h"
 
@@ -295,7 +297,7 @@ int smi_bwc_config( MTK_SMI_BWC_CONFIG* p_conf )
         M4U_WriteReg32( 0x0, REG_SMI_L1ARB4, 0x0   );   //larb4 isp:default
 
         #if 1/*Jackie custom*/
-        M4U_WriteReg32( 0x0, REG_SMI_BUS_SEL, 0x140 );
+        //M4U_WriteReg32( 0x0, REG_SMI_BUS_SEL, 0x140 );
         //M4U_WriteReg32( 0x0, REG_SMI_READ_FIFO_TH, 0xD60 );
         M4U_WriteReg32( LARB0_BASE, 0x18, 0x420 );       
         M4U_WriteReg32( LARB1_BASE, 0x18, 0x420 );       

@@ -19,7 +19,7 @@
 
 
 # drivers/dispsys
-#ccflags-y += -I$(MTK_ROOT_CUSTOM)/../platform/mt6589/kernel/drivers/dispsys
+
 obj-y += ddp_drv.o
 obj-y += ddp_ovl.o
 obj-y += ddp_bls.o
